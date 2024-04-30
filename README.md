@@ -1,70 +1,103 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Project-009 : Clarus Shopping (RP-09)
 
-In the project directory, you can run:
+## Description
 
-### `yarn start`
+Project aims to create a Clarus Shopping App.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Problem Statement
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- We are adding a new project to our portfolios. So you and your colleagues have started to work on the project.
 
-### `yarn test`
+## Project Skeleton
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+003 - Clarus Shopping App(folder)
+|
+|----readme.md         # Given to the students (Definition of the project)
+SOLUTION
+├── public
+│     └── index.html
+├── src
+│   ├── App.js
+│   ├── assets
+│   │   └── cw.svg
+│   ├── components
+│   │   ├── BasketCard.jsx
+│   │   ├── CategoryBar.jsx
+│   │   ├── EmptyBasketTotal.jsx
+│   │   ├── FiiledBasketTotal.jsx
+│   │   ├── NavBar.jsx
+│   │   └── ProductCard.jsx
+│   ├── index.css
+│   ├── index.js
+│   ├── pages
+│   │   ├── Basket.jsx
+│   │   ├── Home.jsx
+│   │   └── NotFound.jsx
+│   ├── redux
+│   │   ├── action
+│   │   │   └── basketAction.js
+│   │   ├── index.jsx
+│   │   ├── reducer
+│   │   │   └── basketReducer.js
+│   │   └── type
+│   │   │   └── basketType.js
+│   └── router
+│       └── AppRouter.jsx
+├── package.json
+└── yarn.lock
+```
 
-### `yarn build`
+## Expected Outcome
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Project 009 Snapshot](clarus-shopping.gif)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Objective
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Build a Clarus Shopping App using ReactJS.
 
-### `yarn eject`
+### At the end of the project, following topics are to be covered;
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- HTML
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- CSS
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- JS
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- ReactJS
 
-## Learn More
+- React-Redux
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Material UI
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### At the end of the project, students will be able to;
 
-### Code Splitting
+- improve coding skills within HTML & CSS & JS & ReactJS.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- use git commands (push, pull, commit, add etc.) and Github as Version Control System.
 
-### Analyzing the Bundle Size
+## Steps to Solution
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Step 1: Create React App using `yarn create react-app clarus-shopping`
 
-### Making a Progressive Web App
+- Step 2 : Install `axios`, `redux` , `react-redux`, `react-router-dom`, `mui`, `mui-icons` package to your `package.json`. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Step 3: You can use https://fakestoreapi.com/products for data.
 
-### Advanced Configuration
+- Step 4: You can use https://fakestoreapi.com/products/categories for categories.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Step 5: Push your application into your own public repo on Github
 
-### Deployment
+- Step 6: Add project gif to your project and README.md file.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Demo
+[Live](https://clarus-shopping.vercel.app/)
+## Notes
 
-### `yarn build` fails to minify
+- **The product information received from the API does not include a "quantity" key. However, you can add the quantity information when adding a product. This will enable you to easily perform quantity increment and decrement operations in the basket page.**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- You can add additional functionalities to your app.
+
+

@@ -17,3 +17,8 @@
   align-items: center;
   flex-wrap: wrap;
 }
+
+.productCartContainer {
+  border: 2px solid red;
+  max-width: 1200px;
+}

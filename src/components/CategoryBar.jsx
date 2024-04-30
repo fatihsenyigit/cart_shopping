@@ -1,4 +1,4 @@
-import { Button } from "@mui/material";
+
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Radio from "@mui/material/Radio";
@@ -6,7 +6,7 @@ import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 
-const CategoryBar = () => {
+const CategoryBar = ({setRadioBtn}) => {
   const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(false)
   const getCategories = async () => {
@@ -26,6 +26,10 @@ const CategoryBar = () => {
     }
   };
 
+  const handleChange = (e) => {
+    setRadioBtn(e.target.value)
+  }
+
   useEffect(() => {
     getCategories();
   }, []);
@@ -38,6 +42,7 @@ const CategoryBar = () => {
           aria-labelledby="demo-row-radio-buttons-group-label"
           name="row-radio-buttons-group"
           defaultValue="all"
+          onChange={handleChange}
         >
           {loading ? (
             <h1>Loading...</h1>
